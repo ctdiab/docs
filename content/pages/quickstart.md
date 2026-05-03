@@ -35,12 +35,15 @@ In this guide, you'll create a user site at `<username>.github.io`.
 
 ## Changing the title and description
 
-By default, the title of your site is `username.github.io`. You can change the title by editing the `_config.yml` file in your repository. You can also add a description for your site.
+By default, the title of your site is `username.github.io`. You can change the title by creating and/or editing the `_config.yml` file in your repository. You can also add a description for your site.
 
+<!-- The following steps need to be changed to creating the _config.yml file instead of editing it. This is because the _config.yml file does not exist automatically after following the steps under "Creating your website". I can confirm this is the case, and at least one other user on Substack was also confused by the implication that the _config.yml file should exist when it does not by default. The following steps are based on this proposed change. -->
 1. Click the **Code** tab of your repository.
-1. In the file list, click `_config.yml` to open the file.
-1. Click {% octicon "pencil" aria-label="The edit icon" %} to edit the file.
-1. The `_config.yml` file already contains a line that specifies the theme for your site. Add a new line with `title:` followed by the title you want. Add a new line with `description:` followed by the description you want. For example:
+1. Click the **Add file** icon [Add file icon].
+1. In the "Name your file" field, enter `_config.yml`.
+1. In the first line, enter `theme` followed by a supported Jekyll theme, such as `jekyll-theme-minimal`. For a list of default supported Jekyll themes, see [Adding a theme to your GitHub Pages site using Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll).
+1. Add a new line with `title:` followed by the title you want.
+1. Add a new line with `description:` followed by the description you want. For example:
 
    ```yaml
    theme: jekyll-theme-minimal
